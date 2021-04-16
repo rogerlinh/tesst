@@ -19,19 +19,21 @@
 //   let aLength = a.length;
 //   let bLength = b.length;
 //   for (let i = 0; i < Math.min(aLength,bLength); i++) {
+//     join = join+  a[i] + b[i];
+//   }
 //     if (aLength > bLength) {
-//       for (let t = bLength; t <= aLength; t++) {
-//         join = join + a[t] + a[i] + b[i];
+//       for (let t = bLength; t < aLength; t++) {
+//         join = join + a[t];
 //       }
 //     } else {
-//       for (let t = aLength; t <= bLength; t++) {
-//         join = join + a[t] + a[i] + b[i];
+//       for (let t = aLength; t < bLength; t++) {
+//         join = join + b[t];
 //       }
 //     }
+//     console.log(join);
+
 //   }
-// }
-// merge2String("abc", "1234");
-// console.log(join);
+// merge2String("abc", "1235654");
 
 3; //
 let number = Math.random() * 100;
@@ -49,8 +51,10 @@ form.onsubmit = (e) => {
       break
     } else {
       document.getElementById("text").style.display = "block";
-      document.getElementById("text").innerHTML = "Nhập lại";
-      
+      document.getElementById("text").innerHTML = `Nhập lại lần: ${i}`;
+      if (i=3) {
+        alert("Rất tiếc bạn đoán sai cmn hết rồi")
+      }
     }
   }
 };
