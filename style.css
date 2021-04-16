@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+.container {
+    margin: 0 30%;
+    width: 40%;
+    height: 50vh;
+    border: 1px solid black;
+    text-align: center;
+    padding-top: 10%;
+    background-color: rgb(211, 210, 210);
+}
+#numberInput {
+    width: 20vw;
+    height: 5vh;
+    margin-top: 3%;
+}
